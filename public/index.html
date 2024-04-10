@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0; /* Light background to make text stand out */
+      }
+      .message {
+        font-size: 2em; /* Larger text */
+        color: #ff00ff; /* Colorful text */
+        font-family: "Arial", sans-serif;
+        animation: wiggle 1s infinite; /* Apply the wiggle animation */
+      }
+
+      /* Keyframes for the wiggle animation */
+      @keyframes wiggle {
+        0%,
+        100% {
+          transform: rotate(-5deg);
+        }
+        50% {
+          transform: rotate(5deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="message">Hello from Launch School</div>
+  </body>
+</html>
