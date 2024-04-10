@@ -10,6 +10,7 @@
         height: 100%;
         margin: 0;
         display: flex;
+        flex-direction: column; /* Added */
         justify-content: center;
         align-items: center;
         background-color: #f0f0f0; /* Light background to make text stand out */
@@ -19,6 +20,17 @@
         color: #ff00ff; /* Colorful text */
         font-family: "Arial", sans-serif;
         animation: wiggle 1s infinite; /* Apply the wiggle animation */
+        margin-bottom: 20px; /* Added */
+      }
+      .link {
+        text-decoration: none;
+        color: #007bff; /* Link color */
+        font-size: 1.2em; /* Link text size */
+        font-weight: bold; /* Bold text */
+        transition: color 0.3s; /* Smooth color transition on hover */
+      }
+      .link:hover {
+        color: #0056b3; /* Darker color on hover */
       }
 
       /* Keyframes for the wiggle animation */
@@ -35,5 +47,6 @@
   </head>
   <body>
     <div class="message">Hello from Launch School</div>
+    <a class="link" href="https://todos.srdjancoric.biz">Go to Todos App</a>
   </body>
 </html>
